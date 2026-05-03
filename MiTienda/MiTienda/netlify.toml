@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[edge_functions]]
+  path = "/"
+  function = "og"
+
+[dev]
+  command = ""
+  targetPort = 0
+  port = 8888
+  publish = "."
+  autoLaunch = false

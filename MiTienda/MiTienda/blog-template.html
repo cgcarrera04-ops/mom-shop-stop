@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | Mom Shop Stop</title>
+    <meta name="description" content="{{META_DESCRIPTION}}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'custom-pink': '#f8b4c8', 'custom-dark-pink': '#e18aaa', 'custom-green': '#a4d4b4', 'custom-blue': '#89d2e2' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        .blog-content h2 { font-size: 1.5rem; font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1e293b; }
+        .blog-content p { margin-bottom: 1rem; color: #475569; line-height: 1.6; }
+        .blog-content ul { list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1rem; color: #475569; }
+        .blog-content strong { color: #0f172a; }
+        .blog-content a { color: #e18aaa; text-decoration: underline; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans antialiased text-slate-800">
+    
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-custom-pink/30 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-gradient-to-br from-custom-pink to-custom-dark-pink rounded-xl flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform"><span class="mt-1">M</span></div>
+                <span class="font-extrabold text-2xl tracking-tight text-slate-800 hidden sm:inline-block">Mom Shop Stop</span>
+            </a>
+            <a href="/" class="text-custom-dark-pink font-bold hover:bg-pink-50 py-2 px-4 rounded-xl transition-colors">Volver a la Tienda</a>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 pt-28 pb-16">
+        <article class="bg-white rounded-3xl p-6 sm:p-12 shadow-xl border border-slate-100 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-custom-blue via-custom-pink to-custom-dark-pink"></div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">{{TITLE}}</h1>
+            <div class="h-1 w-20 bg-custom-dark-pink rounded-full mb-8"></div>
+            
+            <div class="blog-content text-lg">
+                {{CONTENT}}
+            </div>
+
+            {{FEATURED_PRODUCT}}
+            {{CROSS_SELLING_BLOGS}}
+        </article>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 mt-12 py-8 text-center">
+        <p class="text-slate-500 font-semibold text-sm">© <script>document.write(new Date().getFullYear())</script> Mom Shop Stop. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
