@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /.netlify/
-Disallow: /netlify/
-
-Sitemap: https://momshopstop.netlify.app/sitemap.xml
