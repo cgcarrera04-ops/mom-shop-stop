@@ -1,0 +1,21 @@
+{
+  "name": "Mom Shop Stop",
+  "short_name": "MomShop",
+  "description": "Tu tienda de bienestar y suplementos",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e18aaa",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/qqXX4XHs/291701777-433557862112157-5185025703322080110-n.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.postimg.cc/qqXX4XHs/291701777-433557862112157-5185025703322080110-n.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
